@@ -1,0 +1,35 @@
+<%- include('partials/header'); -%>
+<% parsedData.forEach(function(dataFetch){%>
+
+    <h2>Continent- <%=dataFetch['continent']%> </h2>
+<h2>Country - <%=dataFetch['country']%></h2>
+<h3>Latitude - <%=dataFetch['countryInfo']['lat']%> </h3>
+<h3>Longitude - <%=dataFetch['countryInfo']['long']%></h3>
+<h3>Total Population - <%=dataFetch['population']%></h3>
+<br>
+
+<br>
+<h1>Statistics Till Date :- </h1>
+<h4>Cases :- <%=dataFetch['cases']%></h4>
+<h4>Number Of Deaths :- <%=dataFetch['deaths']%></h4>
+<h4>Recovered Cases :- <%=dataFetch['recovered']%></h4>
+<h4>Active Cases :- <%=dataFetch['active']%></h4>
+<h4>Crtitical Cases :- <%=dataFetch['critical']%></h4>
+<h4>Cases Per Miliion:- <%=dataFetch['casesPerOneMillion']%></h4>
+<h4>Tests Per Million:- <%=dataFetch['testsPerOneMillion']%></h4>
+<h4>Deaths Per Million:- <%=dataFetch['deathsPerOneMillion']%></h4>
+
+<br>
+<h1>Today's Statistics</h1>
+<h4>Cases :- <%=dataFetch['todayCases']%></h4>
+<h4>Number Of Deaths :- <%=dataFetch['todayDeaths']%></h4>
+<h4>Number of Recovered Cases :- <%=dataFetch['todayRecovered']%></h4>
+<hr>
+<%})%>
+
+
+
+<button><a href="/Multiple-Country">Go Back</a></button>
+
+
+<%- include('partials/footer'); -%>

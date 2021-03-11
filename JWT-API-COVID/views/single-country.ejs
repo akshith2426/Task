@@ -1,0 +1,25 @@
+<%- include('partials/header'); -%>
+<div class="container">
+  <h1 style="text-align: center;">Please Enter Your Country</h1>
+    
+        <form id="myform" action="/results" method="GET" class="from-inline" role="form">
+            
+            <div class="search-box">
+                    <label for="country">Country</label>
+                    <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" name="country" class="search-text" required>
+                    
+                    <br>
+                    <br>
+                    <button class="form-control">Submit</button>
+                
+            </div>
+            
+            
+            
+        </form>
+        
+<button><a href="/">Go Back</a></button>
+</div>
+
+
+<%- include('partials/footer'); -%>

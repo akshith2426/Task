@@ -1,0 +1,19 @@
+<%- include('partials/header'); -%>
+<div class="container">
+  <h1 style="text-align: center;">Enter Multiple Countries [ Comma Seperated ]</h1>
+    
+        <form id="myform" action="/results1" method="GET" class="from-inline" role="form">
+            <div class="search-box">
+                    <label for="countries">Countries</label>
+                    <input type="text" class="form-control" name="countries" id="countires" class="search-text" required>                   
+                    <br>
+                    <br>
+                    <button>Submit</button>
+                
+            </div>
+        </form>
+        <button><a href="/">Go Back</a></button>
+</div>
+
+
+<%- include('partials/footer'); -%>

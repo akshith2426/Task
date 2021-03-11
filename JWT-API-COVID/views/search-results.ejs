@@ -1,0 +1,31 @@
+<%- include('partials/header'); -%>
+
+<h2>Continent- <%=parsedData['continent']%> </h2>
+<h2>Country - <%=parsedData['country']%></h2>
+<h3>Latitude - <%=parsedData['countryInfo']['lat']%> </h3>
+<h3>Longitude - <%=parsedData['countryInfo']['long']%></h3>
+<h3>Total Population - <%=parsedData['population']%></h3>
+<br>
+<hr>
+<br>
+<h1>Statistics Till Date :- </h1>
+<h4>Cases :- <%=parsedData['cases']%></h4>
+<h4>Number Of Deaths :- <%=parsedData['deaths']%></h4>
+<h4>Recovered Cases :- <%=parsedData['recovered']%></h4>
+<h4>Active Cases :- <%=parsedData['active']%></h4>
+<h4>Crtitical Cases :- <%=parsedData['critical']%></h4>
+<h4>Cases Per Miliion:- <%=parsedData['casesPerOneMillion']%></h4>
+<h4>Tests Per Million:- <%=parsedData['testsPerOneMillion']%></h4>
+<h4>Deaths Per Million:- <%=parsedData['deathsPerOneMillion']%></h4>
+
+<br>
+<h1>Today's Statistics</h1>
+<h4>Cases :- <%=parsedData['todayCases']%></h4>
+<h4>Number Of Deaths :- <%=parsedData['todayDeaths']%></h4>
+<h4>Number of Recovered Cases :- <%=parsedData['todayRecovered']%></h4>
+
+
+<button><a href="/Single-Country">Go Back</a></button>
+
+
+<%- include('partials/footer'); -%>
